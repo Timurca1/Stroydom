@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наши работы — портфолио строительной компании СтройДом, Красноярск</title>
+<meta name="description" content="Портфолио СтройДом: построенные дома, каркасные дома, бани и гаражи в Красноярске и крае. Реальные объекты с фото, площадью, сроками и стоимостью.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-projects">
+
+<!-- ======================= ШАПКА ======================= -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo" aria-label="СтройДом — на главную">
+      <svg width="42" height="42" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" rx="11" fill="#27ae60"/>
+        <path d="M11 24.5L24 13.5L37 24.5V36a2 2 0 0 1-2 2h-6v-8.5h-10V38h-6a2 2 0 0 1-2-2V24.5z" fill="#ffffff"/>
+      </svg>
+      <span>Строй<b>Дом</b><span class="logo__sub">Красноярск · с 2008</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Главная</a></li>
+        <li><a href="about.html" class="nav__link">О компании</a></li>
+        <li><a href="services.html" class="nav__link">Услуги</a></li>
+        <li><a href="projects.html" class="nav__link">Работы</a></li>
+        <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__contacts">
+      <a href="tel:+73915557777" class="header__phone">+7 (391) 555-77-77</a>
+      <a href="contacts.html" class="btn btn--primary btn--sm">Заказать звонок</a>
+    </div>
+
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero hero--compact">
+  <div class="container">
+    <div class="hero__breadcrumbs"><a href="index.html">Главная</a> <span>/</span> Работы</div>
+    <h1>Наши работы</h1>
+    <p>340+ объектов в Красноярске и крае. Здесь — избранные проекты последних лет.</p>
+  </div>
+</section>
+
+<!-- ======================= ГАЛЕРЕЯ ======================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Портфолио</span>
+      <h2>Реализованные проекты</h2>
+      <p>Выберите категорию, чтобы посмотреть интересующий тип объекта.</p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Фильтр проектов">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="dom">Дома</button>
+      <button class="filter-btn" data-filter="karkas">Каркасные</button>
+      <button class="filter-btn" data-filter="banya">Бани</button>
+      <button class="filter-btn" data-filter="garage">Гаражи</button>
+    </div>
+
+    <div class="grid grid--3" id="projects-grid">
+
+      <article class="project-card reveal" data-category="dom">
+        <img class="project-card__img" src="images/proekt-dom-iz-gazobetona-nern--4394900.jpg" alt="Дом на Мира">
+        <div class="project-card__body">
+          <h3>«Дом на Мира»</h3>
+          <ul class="project-card__meta"><li>180 м²</li><li>2 этажа</li><li>Сдан: 2024</li></ul>
+          <div class="project-card__price">6 400 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="dom">
+        <img class="project-card__img" src="images/i (1).webp" alt="Дача на Енисее">
+        <div class="project-card__body">
+          <h3>«Дача на Енисее»</h3>
+          <ul class="project-card__meta"><li>120 м²</li><li>1 этаж</li><li>Сдана: 2023</li></ul>
+          <div class="project-card__price">4 100 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="dom">
+        <img class="project-card__img" src="images/i (2).webp" alt="Коттедж на Столбах">
+        <div class="project-card__body">
+          <h3>«Коттедж на Столбах»</h3>
+          <ul class="project-card__meta"><li>240 м²</li><li>2 этажа</li><li>Сдан: 2024</li></ul>
+          <div class="project-card__price">9 800 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="karkas">
+        <img class="project-card__img" src="images/11.jpg" alt="Каркасный дом в Академгородке">
+        <div class="project-card__body">
+          <h3>«Каркас в Академгородке»</h3>
+          <ul class="project-card__meta"><li>140 м²</li><li>1,5 этажа</li><li>Сдан: 2024</li></ul>
+          <div class="project-card__price">3 200 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="karkas">
+        <img class="project-card__img" src="images/IMG_8938.jpg" alt="Каркасный дом в Берёзовке">
+        <div class="project-card__body">
+          <h3>«Каркас в Берёзовке»</h3>
+          <ul class="project-card__meta"><li>110 м²</li><li>1 этаж</li><li>Сдан: 2023</li></ul>
+          <div class="project-card__price">2 800 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="karkas">
+        <img class="project-card__img" src="images/20250917_1549____rem.png" alt="Каркасный дом в Сосновоборске">
+        <div class="project-card__body">
+          <h3>«Каркас в Сосновоборске»</h3>
+          <ul class="project-card__meta"><li>160 м²</li><li>2 этажа</li><li>Сдан: 2024</li></ul>
+          <div class="project-card__price">3 750 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="banya">
+        <img class="project-card__img" src="images/i (3).webp" alt="Баня на Енисее">
+        <div class="project-card__body">
+          <h3>«Баня на Енисее»</h3>
+          <ul class="project-card__meta"><li>48 м²</li><li>1 этаж</li><li>Сдана: 2024</li></ul>
+          <div class="project-card__price">1 150 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="banya">
+        <img class="project-card__img" src="images/635pg4he52jbp75r0f68a51eneh56t2q.jpg" alt="Баня с террасой">
+        <div class="project-card__body">
+          <h3>«Баня с террасой»</h3>
+          <ul class="project-card__meta"><li>36 м²</li><li>1 этаж</li><li>Сдана: 2023</li></ul>
+          <div class="project-card__price">890 000 ₽</div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="garage">
+        <img class="project-card__img" src="images/garazh-na-dve-mashiny2.jpg" alt="Гараж на две машины">
+        <div class="project-card__body">
+          <h3>«Гараж на 2 машины»</h3>
+          <ul class="project-card__meta"><li>54 м²</li><li>1 этаж</li><li>Сдан: 2024</li></ul>
+          <div class="project-card__price">1 050 000 ₽</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CTA ======================= -->
+<section class="section section--light">
+  <div class="container">
+    <div class="cta reveal">
+      <h2>Хотите такой же дом?</h2>
+      <p>Оставьте заявку — подберём похожий проект, адаптируем его под ваш участок и назовём точную стоимость.</p>
+      <a href="contacts.html" class="btn btn--primary">Оставить заявку</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= ПОДВАЛ ======================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <svg width="42" height="42" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="44" height="44" rx="11" fill="#27ae60"/>
+            <path d="M11 24.5L24 13.5L37 24.5V36a2 2 0 0 1-2 2h-6v-8.5h-10V38h-6a2 2 0 0 1-2-2V24.5z" fill="#ffffff"/>
+          </svg>
+          <span>Строй<b>Дом</b><span class="logo__sub">Красноярск · с 2008</span></span>
+        </a>
+        <p>Строительная компания полного цикла в Красноярске. Проектируем и строим дома, бани и гаражи под ключ по фиксированной смете с 2008 года.</p>
+        <div class="socials">
+          <a href="#" aria-label="ВКонтакте">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 18.2c-5.9 0-9.27-4.04-9.41-10.77h2.96c.1 4.94 2.27 7.03 4 7.46V7.43h2.79v4.26c1.7-.18 3.5-2.12 4.1-4.26h2.79c-.46 2.63-2.4 4.57-3.78 5.37 1.37.65 3.58 2.34 4.42 5.4h-3.07c-.65-2.03-2.28-3.6-4.46-3.82v3.82h-.34z"/></svg>
+          </a>
+          <a href="#" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.3l-3.02 14.26c-.23 1.01-.82 1.26-1.67.78l-4.6-3.39-2.22 2.14c-.25.24-.45.45-.92.45l.33-4.67 8.5-7.68c.37-.33-.08-.51-.57-.18l-10.5 6.62-4.53-1.42c-.98-.31-1-.98.2-1.46l17.7-6.83c.82-.3 1.54.2 1.3 1.38z"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23a8.2 8.2 0 0 1 5.83 2.41 8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.44.12-.14.17-.24.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Меню</h4>
+        <ul class="footer__menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="projects.html">Работы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Контакты</h4>
+        <ul class="footer__contacts">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+73915557777">+7 (391) 555-77-77</a>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@stroydom-krsk.ru">info@stroydom-krsk.ru</a>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>660000, г. Красноярск,<br>ул. Калинина, 55, офис 301</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Пн–Пт 9:00–19:00, Сб 10:00–16:00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2024 СтройДом. ИНН 2465XXXXXX. Лицензия СРО-XXX</span>
+      <span>Строительство в Красноярске и Красноярском крае</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
