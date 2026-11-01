@@ -741,26 +741,30 @@ p { color: var(--gray); }
   .container { padding: 0 18px; }
   .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
   .hero { min-height: auto; }
-  .hero__inner { padding: 70px 0; }
-  .hero h1 { font-size: 2.1rem; }
-  .hero p { font-size: 1.05rem; }
-  .hero__stats { gap: 30px; }
-  .hero__stat b { font-size: 1.9rem; }
+  .hero__inner { padding: 44px 0 40px; }
+  .hero h1 { font-size: 1.9rem; margin-bottom: 16px; }
+  .hero p { font-size: 1rem; margin-bottom: 24px; }
+  .hero__stats { gap: 18px 24px; }
+  .hero__stat b { font-size: 1.7rem; }
   .hero--compact h1 { font-size: 1.9rem; }
   .footer__top { grid-template-columns: 1fr; }
   .timeline { padding-left: 32px; }
   .timeline__item::before { left: -32px; }
+  .hero__actions { margin-bottom: 28px; }
   .hero__actions .btn { flex: 1; }
 }
 
 @media (max-width: 480px) {
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.5rem; }
-  .hero h1 { font-size: 1.75rem; }
+  .hero h1 { font-size: 1.55rem; line-height: 1.2; }
+  .hero h1 br { display: none; }  /* убираем жёсткий перенос */
   .hero--compact h1 { font-size: 1.6rem; }
   .btn { padding: 13px 22px; font-size: 0.94rem; }
   .hero__actions { flex-direction: column; }
-  .hero__stats { gap: 22px 30px; }
+  .hero__actions .btn { width: 100%; padding: 12px 20px; font-size: 0.9rem; }
+  .hero__stats { grid-template-columns: 1fr; }
+  .hero__inner { padding: 32px 0 32px; }
   .card, .review-card { padding: 26px 22px; }
   .cta { padding: 34px 22px; }
   .filter-btn { padding: 9px 18px; font-size: 0.88rem; }
